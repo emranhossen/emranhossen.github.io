@@ -4,12 +4,14 @@ export default function Header() {
   return (
     <>
       <nav>
-        <h1>Next'Blog</h1>
+        <Link href='/'>
+          <a>Emran's Blog</a>
+        </Link>
         <div>
           <Link href='/'>
             <a>Blog</a>
           </Link>
-          <Link href='/'>
+          <Link href='/about'>
             <a>About</a>
           </Link>
         </div>

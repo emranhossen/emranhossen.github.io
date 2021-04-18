@@ -1,6 +1,6 @@
 import Link from 'next/link'
 // import Image from 'next/image'
-import styles from './Header.module.css'
+// import styles from './Header.module.css'
 
 export default function Header() {
   return (
@@ -8,7 +8,7 @@ export default function Header() {
       <nav>
         <Link href='/'>
           <a>
-            <div className={styles.logoImage} />
+            <div className="logo-image" />
             Emran Hossen</a>
         </Link>
         <div>
@@ -39,7 +39,14 @@ export default function Header() {
         }
         .logo-image {
           display: inline-block;
-          width: 100px;
+          overflow: hidden;
+          height: 80px;
+          width: 80px;
+          background-color: brown;
+          background-image: url("public/assets/emran_thumb.jpg");
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
         }
       `}</style>
     </>

@@ -1,11 +1,16 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Header() {
   return (
     <>
       <nav>
         <Link href='/'>
-          <a>Emran's Blog</a>
+          <a>
+            <span className="logo-image">
+              <img src="/assets/emran_thumb.jpg" alt="me" layout="fill" />
+            </span>
+            Emran Hossen</a>
         </Link>
         <div>
           <Link href='/'>
@@ -32,6 +37,10 @@ export default function Header() {
         }
         nav a:hover {
           text-decoration: underline;
+        }
+        .logo-image {
+          display: inline-block;
+          width: 100px;
         }
       `}</style>
     </>

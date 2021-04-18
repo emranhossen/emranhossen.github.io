@@ -43,7 +43,7 @@ export default function Header() {
           height: 80px;
           width: 80px;
           background-color: brown;
-          background-image: url("public/assets/emran_thumb.jpg");
+          background-image: url("/assets/emran_thumb.jpg");
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;

@@ -1,0 +1,16 @@
+.logoImage {
+    display: inline-block;
+    overflow: hidden;
+    height: 80px;
+    width: 80px;
+    background-color: brown;
+    background-image: url("public/assets/emran_thumb.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bgImage {
+    height: 80px;
+    z-index: 0;
+}

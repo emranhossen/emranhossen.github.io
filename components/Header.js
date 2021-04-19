@@ -1,26 +1,33 @@
 import Link from 'next/link'
 // import Image from 'next/image'
-// import styles from './Header.module.css'
+import styles from './Header.module.css'
 
 export default function Header() {
-  return (
-    <>
-      <nav>
-        <Link href='/'>
-          <a>
-            <div className="logo-image" />
-            Emran Hossen</a>
-        </Link>
-        <div>
-          <Link href='/'>
-            <a>Blog</a>
-          </Link>
-          <Link href='/about'>
-            <a>About</a>
-          </Link>
-        </div>
-      </nav>
-      <style jsx>{`
+	return (
+		<>
+			<nav>
+				<Link href='/'>
+					<a>
+						<div className="fullLogo">
+							<div className={styles.imageContainer}>
+								<div className="logo-image" />
+							</div>
+							<div className="logo-name">
+								<span className={styles.firstName}>Emran</span> <span className={styles.lastName}>Hossen</span>
+            				</div>
+						</div>
+					</a>
+				</Link>
+				<div>
+					<Link href='/'>
+						<a>Blog</a>
+					</Link>
+					<Link href='/about'>
+						<a>About</a>
+					</Link>
+				</div>
+			</nav>
+			<style jsx>{`
         nav {
           background: #444;
           width: auto;
@@ -49,6 +56,6 @@ export default function Header() {
           background-repeat: no-repeat;
         }
       `}</style>
-    </>
-  )
+		</>
+	)
 }

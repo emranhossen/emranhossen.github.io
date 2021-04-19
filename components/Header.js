@@ -5,20 +5,20 @@ import styles from './Header.module.css'
 export default function Header() {
 	return (
 		<>
-			<nav>
+			<nav className={styles.mainNav}>
 				<Link href='/'>
 					<a>
-						<div className="fullLogo">
+						<div className={styles.fullLogo}>
 							<div className={styles.imageContainer}>
 								<div className="logo-image" />
 							</div>
-							<div className="logo-name">
+							<div className={styles.logoName}>
 								<span className={styles.firstName}>Emran</span> <span className={styles.lastName}>Hossen</span>
             				</div>
 						</div>
 					</a>
 				</Link>
-				<div>
+				<div className={styles.menuItem}>
 					<Link href='/'>
 						<a>Blog</a>
 					</Link>
@@ -28,27 +28,11 @@ export default function Header() {
 				</div>
 			</nav>
 			<style jsx>{`
-        nav {
-          background: #444;
-          width: auto;
-          padding: 0 2rem;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          font-size: 1rem;
-        }
-        nav a {
-          margin-right: 1rem;
-          text-decoration: none;
-        }
-        nav a:hover {
-          text-decoration: underline;
-        }
         .logo-image {
           display: inline-block;
           overflow: hidden;
-          height: 80px;
-          width: 80px;
+          height: 70px;
+          width: 70px;
           background-color: brown;
           background-image: url("/assets/emran_thumb.jpg");
           background-size: cover;

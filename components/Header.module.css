@@ -1,16 +1,49 @@
+.mainNav {
+    background: #2c3e50;
+    width: auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.mainNav a {
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+.mainNav a:hover {
+    text-decoration: none;
+}
+
 .fullLogo {
-    display:flex;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.logoName .firstName {
+    color: #1abc9c;
 }
 
 .imageContainer {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     overflow: hidden;
 }
 
-.logoImage {
+.logoName {
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.fullLogo .logoImage {
     display: inline-block;
     overflow: hidden;
     height: 80px;
@@ -25,4 +58,11 @@
 .bgImage {
     height: 80px;
     z-index: 0;
+}
+
+.menuItem {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
 }

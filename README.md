@@ -36,4 +36,5 @@ Second step:
 Subtree command
 `git subtree split --branch out --prefix out/`
 Third step:
+Create a `.nojekyll` file in `out` folder
 Push `out` branch to remote
